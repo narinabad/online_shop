@@ -8,6 +8,7 @@ import config
 app=Flask(__name__)
 
 app.config["SQLALCHEMY_DATABASE_URI"] = config.SQLALCHEMY_DATABASE_URI
+app.config['SECRET_KEY']=config.SECRET_KEY
 
 
 app.register_blueprint(general)
