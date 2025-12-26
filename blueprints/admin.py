@@ -79,5 +79,5 @@ def edit_product(id):
        else:
           product.active=1
           
-          db.session.commit()
-          return redirect(url_for('admin.edit_product',id=id))
+       db.session.commit()
+       return redirect(url_for('admin.edit_product',id=id))
